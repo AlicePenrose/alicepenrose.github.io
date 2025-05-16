@@ -1,0 +1,25 @@
+main {
+    display: grid;
+    grid-template-areas:
+        ' Asside  Header  Header '
+        ' Asside Article Article '
+        ' Asside Article Article '
+        ' Asside Article Article '
+        ' Footer  Footer  Footer ';
+}
+
+.Header {
+    grid-area: Header;
+}
+
+.Article {
+    grid-area: Article;
+}
+
+.Asside {
+    grid-area: Asside;
+}
+
+.Footer {
+    grid-area: Footer;
+}
