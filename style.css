@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+    grid-template-areas:
+        ' Header Header '
+        ' Asside   Main  '
+        ' Footer  Footer ';
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 8% 84% 8%;
+}
+
+.Header {
+    grid-area: Header;
+
+    background-color: #434343;
+}
+
+.Main {
+    grid-area: Main;
+
+    background-color: #9b9b9b;
+}
+
+.Main-Content {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+.Asside {
+    grid-area: Asside;
+
+    background-color: #7b7b7b;
+}
+
+.Footer {
+    grid-area: Footer;
+
+    background-color: #434343;
+}
